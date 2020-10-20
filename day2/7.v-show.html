@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <h3 v-show="isShow">{{user.name}}</h3>
+    <h3 v-show="true">{{user.age}}</h3>
+    <input type="button" value="点我" @click="change_display">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            name: 'zzy',
+            age: 18,
+            isShow: true,
+            user: {name: 'zzy', age:18,sex:'男'}
+        },
+        methods: {
+            change_display(){
+                this.isShow = !this.isShow
+            },
+        }
+    })
+</script>
+</body>
+</html>

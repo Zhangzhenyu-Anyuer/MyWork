@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <h3> 年龄：{{age}}</h3>
+    <input type="button" value="增加" v-on:click="add_age">
+    <input type="button" value="减小" v-on:click="sub_age">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            age: 18,
+        },
+        methods:{
+            add_age(){
+                this.age++;
+            },
+            sub_age(){
+                this.age--;
+            },
+        }
+    })
+</script>
+</body>
+</html>

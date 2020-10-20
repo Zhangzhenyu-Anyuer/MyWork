@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <h3>内容: {{content}}</h3>
+    <input type="button" value="点我1" @click="change_content('something',event)">
+    <input type="button" value="点我1" @click="change_content1">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            content: 'ad'
+        },
+        methods: {
+            change_content(s,event) {
+                this.content = s
+                console.log(event);
+            },
+            change_content1(){
+                console.log(event);
+            },
+        }
+    })
+</script>
+</body>
+</html>

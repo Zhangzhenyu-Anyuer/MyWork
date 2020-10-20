@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <label>
+        <input type="text" v-model="cc">
+    </label>
+    <input type="button" value="发表留言" @click="add_cont">
+    <h4>留言板总数： <span>{{content.length}}</span> <input v-show="content != 0" type="button" value="删除所有" @click="del_all"></h4>
+    <ul>
+        <li v-for="(v,index) in content" :key="index">{{v}} <button @click="del($index)">X</button></li>
+    </ul>
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            content: ['沙发3','沙发2','沙发1'],
+            cc: '',
+        },
+        methods: {
+            add_cont(){
+                if (this.cc){
+                    // this.content.push(this.cc)
+                    this.content.unshift(this.cc);
+                    this.cc = "";
+                }
+            },
+            del(index){
+                this.content.splice(index,1)
+            },
+            del_all(){
+                this.content = []
+            }
+
+        }
+    })
+</script>
+</body>
+</html>

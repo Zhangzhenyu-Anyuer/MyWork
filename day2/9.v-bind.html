@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .aa{
+            width: 500px;
+            border: 5px black solid;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <img v-bind:class="{aa: showCss}" :title="title" :src="src" alt="" width="500px">
+    <input type="button" value="点我改变样式" @click="change_css">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            showCss: true,
+            src: 'https://p3fx.kgimg.com/stdmusic/20171222/20171222024212267570.jpg',
+            title: 'zz',
+        },
+        methods:{
+            change_css(){
+                this.showCss = !this.showCss;
+                this.src = 'https://p3fx.kgimg.com/stdmusic/20200909/20200909123014236381.jpg';
+                this.title = 'ss'
+            }
+        }
+    })
+</script>
+</body>
+</html>

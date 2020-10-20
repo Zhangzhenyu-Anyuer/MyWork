@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h3>姓名： {{ name }}</h3>
+    <button @click="c1"> ab</button>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            name: 'zzy',
+        },
+        created: function () {
+            console.log(this.name);
+        },
+        methods: {
+            c1() {
+                console.log(vm.data);
+                console.log(vm.name);
+                console.log(vm.$data);
+                console.log(vm.$el);
+            }
+        },
+
+    })
+</script>
+</body>
+</html>

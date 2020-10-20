@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <h3>名字： {{ user.name }} </h3>
+    <ul>
+        <li v-for="(v,index,key) in arr">{{index+1}}---{{v}}---{{key}}</li>
+        <hr>
+        <li v-for="(v,key,index) in users">{{index}}---{{v.name}}---{{v.pwd}}---{{key}}</li>
+        <hr>
+        <li v-for="(v,key,index) in user">{{index +1}}--{{key}}--{{v}}</li>
+    </ul>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            user: {name: 'Tom', age: 15},
+            arr: ['Tom','Linda','Jack','Janmes'],
+            users: [{name: 'Tom',pwd: '123'},{name: 'zz',pwd: 'asv'}],
+        },
+    })
+</script>
+</body>
+</html>

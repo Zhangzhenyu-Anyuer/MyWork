@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="text" @click="write" v-model="msg">
+    <p>{{msg}}</p>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            msg: '',
+        },
+        methods: {
+            write(){
+                this.msg = '';
+            }
+        }
+    })
+</script>
+</body>
+</html>

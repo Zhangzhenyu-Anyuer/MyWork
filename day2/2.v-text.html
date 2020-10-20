@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <span>{{msg}},你好</span>
+    <br>
+    <span v-text="msg">你好</span>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            msg: '欢迎欢迎',
+        },
+    })
+</script>
+</body>
+</html>
