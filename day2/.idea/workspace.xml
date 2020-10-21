@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="vue模板" />
         <option value="HTML File" />
+        <option value="vue模板" />
       </list>
     </option>
   </component>
@@ -30,7 +30,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
@@ -56,9 +57,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="119" y="36" key="SettingsEditor" timestamp="1603193661910">
+    <state x="398" y="132" key="FileChooserDialogImpl" timestamp="1603199162981">
       <screen x="0" y="0" width="1234" height="783" />
     </state>
-    <state x="119" y="36" key="SettingsEditor/0.0.1234.783@0.0.1234.783" timestamp="1603193661910" />
+    <state x="398" y="132" key="FileChooserDialogImpl/0.0.1234.783@0.0.1234.783" timestamp="1603199162981" />
+    <state x="119" y="36" key="SettingsEditor" timestamp="1603199165240">
+      <screen x="0" y="0" width="1234" height="783" />
+    </state>
+    <state x="119" y="36" key="SettingsEditor/0.0.1234.783@0.0.1234.783" timestamp="1603199165240" />
   </component>
 </project>

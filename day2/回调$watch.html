@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <input type="text" v-model="firstName">
+    <p>{{fullName}}</p>
+
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            firstName: 'Foo',
+            lastName: 'Bar',
+            // fullName: 'Foo Bar'
+        },
+        // 通过计算属性来做
+        // computed:{
+        //     fullName() {
+        //         return this.firstName + 's ' + this.lastName
+        //     }
+        // }
+    })
+vm.$watch('firstName',function (val) {
+    this.fullName = val + 's ' + this.lastName
+
+})
+</script>
+</body>
+</html>
