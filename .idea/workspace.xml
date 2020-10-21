@@ -19,8 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de265695-7691-4cf3-b4d3-260f130b6598" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c6bd2114-57a5-4d33-bbfd-8749c553dde5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/代码.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/1.计算属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/2. 监听事件.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,45 +42,34 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="799" />
-    <option name="y" value="-35" />
-    <option name="width" value="1106" />
-    <option name="height" value="1423" />
+  <component name="ProjectId" id="1jBKaUqRfcY7xMyvILtwewuf3rb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectId" id="1j8E6Z1ln1cWKBIrhWKzUB5ZFTp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="de265695-7691-4cf3-b4d3-260f130b6598" name="Default Changelist" comment="" />
-      <created>1603177144088</created>
+      <changelist id="c6bd2114-57a5-4d33-bbfd-8749c553dde5" name="Default Changelist" comment="" />
+      <created>1603272109723</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1603177144088</updated>
-      <workItem from="1603177145358" duration="417000" />
-      <workItem from="1603183939564" duration="119000" />
-      <workItem from="1603184095443" duration="108000" />
-      <workItem from="1603184236565" duration="1801000" />
-      <workItem from="1603186158260" duration="127000" />
-      <workItem from="1603269384559" duration="902000" />
+      <updated>1603272109723</updated>
+      <workItem from="1603272111580" duration="2194000" />
     </task>
     <servers />
   </component>
@@ -93,17 +88,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="72" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603269801870">
+    <state x="119" y="36" key="SettingsEditor" timestamp="1603272686416">
       <screen x="0" y="0" width="1234" height="783" />
     </state>
-    <state x="72" y="47" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1234.783@0.0.1234.783" timestamp="1603269801870" />
-    <state x="398" y="132" key="FileChooserDialogImpl" timestamp="1603199162981">
-      <screen x="0" y="0" width="1234" height="783" />
-    </state>
-    <state x="398" y="132" key="FileChooserDialogImpl/0.0.1234.783@0.0.1234.783" timestamp="1603199162981" />
-    <state x="119" y="36" key="SettingsEditor" timestamp="1603269747435">
-      <screen x="0" y="0" width="1234" height="783" />
-    </state>
-    <state x="119" y="36" key="SettingsEditor/0.0.1234.783@0.0.1234.783" timestamp="1603269747435" />
+    <state x="119" y="36" key="SettingsEditor/0.0.1234.783@0.0.1234.783" timestamp="1603272686416" />
   </component>
 </project>

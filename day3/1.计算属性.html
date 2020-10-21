@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p @click="change">{{ number }}</p>
+    <h3>十位： {{parseInt(number / 10)}}</h3>
+    <h3>个位: {{number % 10}}</h3>
+    <hr>
+    <input type="number" v-model="shi" max="9" min="0">
+    <input type="number" v-model="ge" max="9" min="0">
+    <!--  结果result一个变量依靠多个变量，所以这个时候要使用计算属性  -->
+    结果： {{result}}
+    结果： {{shi + ge}}
+
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            number: 64,
+            shi: '',
+            ge: '',
+        },
+        methods: {
+            change() {
+                this.number--;
+            }
+        },
+        computed: {
+            result() {
+                return this.shi + this.ge
+            }
+        }
+    })
+</script>
+</body>
+</html>
