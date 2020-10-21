@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <f1 co="red"></f1>
+    <f1 co="green"></f1>
+</div>
+
+<script>
+    let f1 = {
+        template: `
+            <div>
+            <span :class="co">这是我的第一个局部组件{{username}}</span>
+            </div>
+        `,
+        data: function (){
+            return {
+                username: 'zz'
+            }
+        },
+        props:['co']
+    }
+    new Vue({
+        el: '#app',
+        data: {},
+        components: {
+            f1:f1
+        }
+    })
+</script>
+</body>
+</html>

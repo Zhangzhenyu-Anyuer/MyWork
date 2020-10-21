@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h3 v-text="username"></h3>
+    <hr>
+    <cc :name="username"></cc>
+</div>
+
+<script>
+    let cc = {
+        template: `
+            <div>
+                <span>My name is {{name}}!!</span>
+            </div>
+        `,
+        props:['name']
+    }
+    new Vue({
+        el: '#app',
+        data: {
+            username: 'zz',
+        },
+        components:{
+            cc:cc,
+        }
+    })
+</script>
+</body>
+</html>

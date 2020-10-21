@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<script>
+    // 正常函数 this指向的时user实例
+    let user = {
+        username: 'xx',
+        func: function () {
+            console.log(this)
+        }
+    }
+    user.func()
+    // 回调函数，this指向不再指向user2实例，而是dom对象
+    let user2 = {
+        username: 'aa',
+        func1: function () {
+            setTimeout(function () {
+                console.log(this);
+            })
+        }
+    }
+    user2.func1()
+    // 再回调函数中，要想使用user3实例对象可以使用箭头函数，这个时候this指向user3实例
+    let user3 = {
+        username: 'zz',
+        func2: function () {
+            setTimeout(()=>{
+                console.log(this.username);
+            })
+
+        }
+    }
+    user3.func2()
+    new Vue({
+        el: '#app',
+        data: {},
+    })
+</script>
+</body>
+</html>

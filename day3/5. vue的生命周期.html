@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <span id="sp"> {{username}}</span>
+    <button @click="change" id="b1">{{num}}</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            username: 'zz',
+            num: '55',
+        },
+        methods:{
+            change(){
+                this.num--;
+            }
+        },
+        // 这是在Vue实例中username还没有被定义的时候调用的函数
+        beforeCreate:function () {
+            this.username = 'aa';
+            console.log(this.username);
+        },
+        // 这是Vue实例调用了data等属性函数创建了vue实例时候调用的函数
+        created: function (){
+            console.log(this.username);
+        },
+        // 这个是在使用Vue属性的之前调用的函数
+        beforeMount(){
+            console.log('beforeMount:'+ document.getElementById('sp').innerText)
+        },
+        // 这个是在使用vue属性之后调用的函数
+        mounted(){
+            console.log('mounted: ', document.getElementById('sp').innerText)
+        },
+        // 这个函数是在data属性被修改直线调用的函数
+        beforeUpdate(){
+            console.log('beforeUpdate: ',this.num)
+            console.log('beforeUpdate: ',document.getElementById('b1').innerText)
+        },
+        // 这个属性是在data属性修改之后调用的函数
+        updated(){
+            console.log('updated',this.num)
+            console.log('updated',document.getElementById('b1').innerText)
+        }
+    })
+</script>
+</body>
+</html>

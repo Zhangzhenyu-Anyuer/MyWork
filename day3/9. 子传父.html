@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h3>用户名：{{username}}</h3>
+    <hr>
+    <cc :username="username" @a-what="gg"></cc>
+</div>
+
+<script>
+    let cc = {
+        template: `
+            <div>
+                My name is {{username}}
+                <button @click="login">登录</button>
+            </div>
+        `,
+        methods:{
+            login(){
+                this.$emit('a-what','游客1')
+            },
+        },
+        props:['username']
+    }
+    new Vue({
+        el: '#app',
+        data: {
+            username: 'zz',
+        },
+        components:{
+            cc:cc
+        },
+        methods:{
+            gg(n){
+                this.username = n
+            },
+        },
+    })
+</script>
+</body>
+</html>

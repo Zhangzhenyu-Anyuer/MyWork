@@ -20,13 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6bd2114-57a5-4d33-bbfd-8749c553dde5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/代码.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/1.计算属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/2. 监听事件.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/3. 箭头函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/4. 回调函数中使用箭头函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/5. vue的生命周期.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/6. 全局组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/7. 局部组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/8. 父传子.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/9. 子传父.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,9 +89,13 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="119" y="36" key="SettingsEditor" timestamp="1603272686416">
+    <state x="119" y="36" key="SettingsEditor" timestamp="1603281526841">
       <screen x="0" y="0" width="1234" height="783" />
     </state>
-    <state x="119" y="36" key="SettingsEditor/0.0.1234.783@0.0.1234.783" timestamp="1603272686416" />
+    <state x="119" y="36" key="SettingsEditor/0.0.1234.783@0.0.1234.783" timestamp="1603281526841" />
+    <state x="274" y="177" key="run.anything.popup" timestamp="1603277020171">
+      <screen x="0" y="0" width="1234" height="783" />
+    </state>
+    <state x="274" y="177" key="run.anything.popup/0.0.1234.783@0.0.1234.783" timestamp="1603277020171" />
   </component>
 </project>

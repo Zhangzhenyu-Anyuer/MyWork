@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <c aa="red"></c>
+</div>
+
+<script>
+    let c = {
+        template: `
+            <div>
+            这是<b>{{username}}</b>的第一个全局组件
+            <span @click="change" :class="aa">{{num}}</span>
+            </div>
+        `,
+        data: function () {
+            return {
+                username: 'zz',
+                num: 66,
+            }
+        },
+        methods:{
+            change(){
+                this.num--;
+            }
+        },
+        props: ['aa']
+    }
+    Vue.component('c',c)
+    new Vue({
+        el: '#app',
+        data: {},
+    })
+</script>
+</body>
+</html>
