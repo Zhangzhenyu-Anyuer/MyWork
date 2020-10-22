@@ -20,13 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6bd2114-57a5-4d33-bbfd-8749c553dde5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day3/3. 箭头函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/4. 回调函数中使用箭头函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/5. vue的生命周期.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/6. 全局组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/7. 局部组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/8. 父传子.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/9. 子传父.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
