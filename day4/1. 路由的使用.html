@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <h3>学习系统</h3>
+    <hr>
+    <router-link to="/tem">python学习</router-link>
+    <router-link to="/tem1">java学习</router-link>
+
+    <router-view></router-view>
+</div>
+
+<script>
+    let tem = {
+        template: `
+            <div>宝贝快来学习Python 模块</div>
+        `,
+    }
+    let tem1 = {
+        template: `
+            <div>宝贝快来学习Java 模块</div>
+        `,
+    }
+    let myRouter = new VueRouter({
+        routes:[
+            {path: '/tem',component: tem},
+            {path: '/tem1',component: tem1},
+        ]
+    })
+    new Vue({
+        el: '#app',
+        data: {},
+        router: myRouter
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+    <router-view></router-view>
+</div>
+
+<script>
+    let first = {
+        template: `
+            <div>
+                <h3>这是组件1</h3>
+                <span>点击按钮向组件2传递参数</span>
+                <button @click="pass">按钮</button>
+            </div>
+        `,
+        methods: {
+            pass(){
+                // this.$router.push('/second?id=1')
+                // this.$router.push('/second/1/')
+                this.$router.push({path: '/second/2/'})
+            }
+        }
+    }
+    let second = {
+        template: `
+            <div>
+                <h3>这是组件2</h3>
+                <span>这是接收组件1传来的参数---> {{$route.query.id}}</span>
+                <br>
+                <span>这是接收组件1传来的参数---> {{$route.params.id}}</span>
+            </div>
+        `
+    }
+    let myRouter = new VueRouter({
+        routes: [
+            {path: '/first',component:first},
+            {path: '/second/:id',component:second},
+            {path: '/',redirect:'/first'},
+        ]
+    })
+    new Vue({
+        el: '#app',
+        data: {},
+        router:myRouter
+    })
+</script>
+</body>
+</html>

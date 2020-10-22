@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+    <router-view></router-view>
+</div>
+
+<script>
+    let first = {
+        template: `
+            <div>
+                <h3>这是第一个组件1</h3>
+                <span>组件1向组件2传参id=<span v-text="p"></span></span>
+                <router-link to="/second/5/Tom/">点我传递</router-link>
+            </div>
+        `,
+        data(){
+            return {
+                p: 5,
+            }
+        }
+    }
+    let second = {
+        template: `
+            <div>
+                <h3>这是第二个组件2</h3>
+                <span>接收组件1传递来的参数id====>{{$route.params.id}},{{$route.params.name}}</span>
+            </div>
+        `
+    }
+    let myRouter = new VueRouter({
+        routes: [
+            {path: '/first',component: first},
+            {path: '/second/:id/:name',component: second},
+            {path: '/',redirect: '/first'},
+        ]
+    })
+    new Vue({
+        el: '#app',
+        data: {},
+        router: myRouter
+    })
+</script>
+</body>
+</html>
