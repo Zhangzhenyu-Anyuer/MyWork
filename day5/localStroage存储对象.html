@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // localStorage在存储对象的时候要先序列化先进行存储，然后再进行反序列化提取
+    let user = {
+        username: 'zz',
+        age:18,
+        bir:'2012-12-12'
+    }
+    localStorage.user = JSON.stringify(user)
+    console.log(localStorage.user);
+    console.log(typeof localStorage.user);
+    console.log(JSON.parse(localStorage.user).username);
+
+</script>
+</body>
+</html>

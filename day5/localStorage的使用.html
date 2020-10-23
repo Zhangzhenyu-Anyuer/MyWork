@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script>
+    // localStorage的三种添加的方式
+    // 1.
+    localStorage.name1 = 'zz'
+    console.log(localStorage);
+    // // 2.
+    // localStorage['name2'] = 'Tom';
+    // console.log(localStorage['name2']);
+    // // 3.
+    // localStorage.setItem('name3','Linda')
+    // localStorage.getItem('name3')
+
+    // localStorage的删除数据
+    // localStorage.removeItem('name1')
+    // console.log(localStorage.name);
+    // localStorage.clear()
+
+    // localStorage的遍历
+
+    for (let n =0;n<localStorage.length;n++){
+        console.log(localStorage.key(n),localStorage.getItem(localStorage.key(n)))
+    }
+
+    // sessionStorage的使用方式跟localStorage的用法一样
+</script>
+
+</body>
+</html>
