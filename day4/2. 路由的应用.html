@@ -37,12 +37,13 @@
                         <td>Id</td>
                         <td>姓名</td>
                         <td>年龄</td>
+                        <td>操作</td>
                     </tr>
-                    <tr v-for="user in users">
+                    <tr v-for="(user,index) in users" :key="index">
                       <td>{{ user.id }}</td>
                       <td>{{ user.username }}</td>
                       <td>{{ user.age }}</td>
-
+                      <td><a href="javascript:;" @click="del(index)">删除</a></td>
 </tr>
 </table>
 
@@ -55,6 +56,12 @@
                     {id:2,username:'Tom',age:22},
                     {id:3,username:'Jack',age:24},
                 ],
+            }
+        },
+        methods:{
+            del(index){
+                console.log(index);
+                this.users.splice(index,1)
             }
         }
     }

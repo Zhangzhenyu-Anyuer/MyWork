@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <table border="1px" cellspacing="0">
+        <tr v-for="(user,index) in users">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.age}}</td>
+            <td><a href="javascript:;" @click="del(key)">删除</a></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            users:[
+                {id:1,username:'zz',age:18},
+                {id:2,username:'Tom',age:22},
+                {id:3,username:'Jack',age:24},
+            ]
+        },
+        methods: {
+            del(index){
+                console.log(index);
+                this.users.splice(index,1)
+            }
+        },
+
+    })
+</script>
+</body>
+</html>

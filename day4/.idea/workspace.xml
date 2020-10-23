@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f42f1b-4309-48bd-8692-a6d6cda2b463" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/day4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1. 路由的使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2. 路由的应用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3. query拼接传参.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.动态路由传参.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5. js动态路由的传参.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2. 路由的应用.html" beforeDir="false" afterPath="$PROJECT_DIR$/2. 路由的应用.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -70,7 +64,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603357925176</updated>
-      <workItem from="1603357927307" duration="5619000" />
+      <workItem from="1603357927307" duration="6368000" />
+      <workItem from="1603409914934" duration="2557000" />
     </task>
     <servers />
   </component>
@@ -87,6 +82,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="119" y="36" key="SettingsEditor" timestamp="1603360553193">
