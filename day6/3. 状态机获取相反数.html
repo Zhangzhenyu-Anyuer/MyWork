@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vuex.3.0.1.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+    <first></first>
+    <second></second>
+</div>
+
+<script>
+    let first = {
+        template: `
+          <div>
+          组件1 中的按钮
+          <button @click="pass">按钮</button>
+          </div>
+        `,
+        methods: {
+            pass() {
+                this.$store.commit('add_count')
+            }
+        }
+    }
+
+    let second = {
+        template: `
+            <div>
+                <span>组件2中的数字：{{$store.state.count}}</span>
+                <span>组件2中的数字的相反数：{{$store.getters.change_count}}</span>
+            </div>
+        `
+    }
+    let myStore = new Vuex.Store({
+        state: {
+            count: 1,
+        },
+        mutations: {
+            add_count(state) {
+                state.count++;
+            },
+        },
+        getters: {
+            change_count(state) {
+                return 0 - state.count
+            }
+        }
+    })
+    new Vue({
+        el: '#app',
+        data: {},
+        components:{
+            first:first,
+            second:second,
+        },
+        store:myStore,
+    })
+</script>
+</body>
+</html>

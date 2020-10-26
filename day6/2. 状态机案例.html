@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vuex.3.0.1.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <first></first>
+    <second></second>
+
+</div>
+
+<script>
+    let first = {
+        template:`
+            <div>
+                <span>点击改变组件2中的用户</span>
+                <button @click="change">按钮</button>
+            </div>
+        `,
+        methods:{
+            change(){
+                this.$store.commit('change_val','zz')
+            }
+        }
+    }
+
+    let second = {
+        template: `
+            <div>
+                <span>{{$store.state.user}}</span>
+             </div>
+        `
+    }
+
+    let myStore = new Vuex.Store({
+        state:{
+            user: {username: 'xx',age:12},
+        },
+        mutations:{
+            change_val(state,val){
+                state.user.username = val
+            }
+        }
+    })
+    new Vue({
+        el: '#app',
+        data: {},
+        components:{
+            first:first,
+            second:second,
+        },
+        store:myStore,
+    })
+</script>
+</body>
+</html>

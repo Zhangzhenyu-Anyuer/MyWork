@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vuex.3.0.1.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+    <first></first>
+    <hr>
+    <second></second>
+</div>
+
+<script>
+    let first = {
+        template: `
+            <div>
+                <h3>这是我的组件一,点击按钮增加组件2数字</h3>
+                <button @click="add">按钮</button>
+             </div>
+        `,
+        methods:{
+            add(){
+                this.$store.commit('add_num')
+            }
+        }
+    }
+
+    let second = {
+        template: `
+            <div>
+                <h3>这是组件2，数字为{{ $store.state.number }}</h3>
+            </div>
+        `,
+    }
+
+    let myStore = new Vuex.Store({
+        state:{
+            number: 3,
+        },
+        mutations:{
+            add_num(state){
+                state.number++;
+            }
+        }
+    })
+    new Vue({
+        el: '#app',
+        data: {},
+        components:{
+            first:first,
+            second:second,
+        },
+        store: myStore,
+    })
+</script>
+</body>
+</html>

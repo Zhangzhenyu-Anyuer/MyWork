@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6bd2114-57a5-4d33-bbfd-8749c553dde5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day5/localStorage的使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day5/localStroage存储对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day6/1.状态机.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day6/2. 状态机案例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day6/3. 状态机获取相反数.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="vue模板" />
         <option value="HTML File" />
+        <option value="vue模板" />
       </list>
     </option>
   </component>
@@ -55,8 +55,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\zzy\everyday_study\05 web进阶\代码" />
+      <recent name="D:\zzy\everyday_study\05 web进阶\代码\day6" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -67,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1603272109723</updated>
       <workItem from="1603272111580" duration="2194000" />
-      <workItem from="1603435902126" duration="945000" />
+      <workItem from="1603435902126" duration="1021000" />
+      <workItem from="1603679770935" duration="5280000" />
     </task>
     <servers />
   </component>
